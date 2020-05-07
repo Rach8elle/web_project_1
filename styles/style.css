@@ -1,3 +1,9 @@
+ /* div, ul, li, img, h1, h2, h3, h4, p {
+  border: 1px solid red;
+} */
+
+
+
 .page {
   min-width: 1100px;
   /* we don't know how to make mobile versions of websites yet, */
@@ -13,19 +19,355 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* parameters for the header section */
+  display: flex;
+  position: relative;
+  bottom: 0;
+  align-items: center;
+  background-color: #f2f2f2;
 }
 
-/* here we have two examples of selectors in order to remind you how to set styles for elements */
+.header__logo {
+  height: 31px;
+  width: 154px;
+  top: 30px;
+  left: 64px;
+  position: absolute;
+  z-index: 100;
+}
+
+.header__title {
+  left: 64px;
+  width: 730px;
+  font-size: 102px;
+  line-height: 96px;
+  font-weight: bold;
+  position: relative;
+
+}
+
+
+.header__subtitle {
+  position: absolute;
+  bottom: 30px;
+  left: 64px;
+  width: 388px;
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+.header__subtitle-link {
+  color: #2f80ed;
+  text-decoration: none;
+}
+
+
 .header__square-pic {
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  top: 64px;
+
+  }
+
+.header__image {
+  height: 608px;
+  width: 765px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 2;
+
 }
 
-/* including elements with key-value modifiers */
-.table__cell_theme_dark {
-  width: 200px;
-  color: white;
-  margin-right: 0;
-  margin-top: 80px;
+
+.description {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
+
+
+.two-columns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 80%;
+  justify-content: space-between;
+
+}
+
+.two-columns__brief {
+  width: 175px;
+  padding: 0;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  margin: 0;
+
+
+}
+
+/* .two-columns__title {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: #2f80ed;
+  padding: 0;
+
+} */
+
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+
+}
+
+.two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+
+}
+
+/* .two-columns__paragraph_content {
+  padding: 0;
+} */
+
+.two-columns__span-accent {
+  font-weight: bold;
+  line-height: 34px;
+  font-size: 24px;
+  margin: 0;
+}
+
+
+.two-columns__paragraph_space_bottom {
+  margin-bottom: 30px;
+}
+
+
+.digits {
+
+}
+
+.section-title {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+
+}
+
+.section-subtitle  {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  margin-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+
+}
+
+.table {
+  display: flex;
+  margin: 0 auto 100px auto;
+  width: 1100px;
+
+}
+
+.table__cell {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: space-around;
+}
+
+
+.table__cards {
+  width: 250px;
+  margin: 60px 0 0 0;
+  padding: 0;
+}
+
+/* .table__cards:last-of-type {
+  margin-right: 0;
+} */
+
+.table__heading {
+  padding: 0;
+  margin: 0;
+
+}
+
+.table__text {
+  margin: 20px 0 0 0;
+  padding: 0;
+
+}
+
+
+.feynman {
+  bottom: 0;
+  background-color: #f2f2f2;
+  position: relative;
+  min-height: 790px;
+  /* background-image: url("../images/feynman.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  background-size: 867px 637px; */
+}
+
+
+/*.feynman__image {
+  height: 637px;
+  width: 867px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+}*/
+
+.feynman__image {
+  background-image: url("../images/feynman.png");
+  /* background-position: left bottom; */
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 637px;
+  width: 867px;
+  z-index: 1;
+
+
+}
+
+
+.feynman__title {
+  padding-top: 100px;
+  bottom: 70px;
+  width: 775px;
+  font-size: 120px;
+  line-height: 1.15;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 4;
+
+}
+
+
+.feynman__subtitle {
+  text-align: center;
+  margin-top: 70px;
+  font-size: 36px;
+  line-height: 51px;
+  font-weight: normal;
+
+
+
+}
+
+
+.feynman__link {
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  position: absolute;
+  right: 40px;
+  top: 50%;
+  text-decoration: none;
+  text-decoration-color: black;
+  z-index: 2;
+
+}
+
+
+
+
+.kaufman {
+  background-color: black;
+  padding-top: 1px;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+
+}
+
+.section-title_theme_dark {
+  width: 60%;
+  margin: auto;
+  /* display: flex;
+  justify-content: center; */
+  line-height: 69px;
+  font-size: 60px;
+  font-weight: bold;
+  margin-top: 90px;
+  text-align: center;
+  color: white;
+
+}
+
+.section-subtitle_theme_dark  {
+  margin: auto;
+  text-align: center;
+  width: 60%;
+  margin-top: 20px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: white;
+
+}
+
+.table_theme_dark {
+  display: flex;
+  margin: 0 auto 90px auto;
+  width: 950px;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  justify-content: space-around;
+  color: white;
+}
+
+
+.table__cell_theme_dark {
+  width: 160px;
+  margin: 80px 0 0 0;
+  padding: 0;
+}
+
+
+
+.table__heading_theme_dark {
+  padding: 0;
+  margin: 0;
+}
+
+.table__text_theme_dark {
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+
+.kaufman__triangle {
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  z-index: -1;
+  }
+
