@@ -78,7 +78,6 @@
 .description {
   display: flex;
   justify-content: center;
-  margin-bottom: 100px;
   margin-top: 100px;
 }
 
@@ -139,33 +138,41 @@
 
 }
 
+
+
+
 .section-subtitle  {
   margin: auto;
   display: flex;
   justify-content: center;
   width: 60%;
-  margin-top: 20px;
+  margin-top: 23px;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
+}
 
+
+
+.digits {
+  margin-top: 100px;
 }
 
 .table {
   display: flex;
-  margin: 0 auto 100px auto;
-  width: 1100px;
   flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
   justify-content: space-between;
-
+  width: 1100px;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
 }
+
 
 
 .table__cell {
   width: 250px;
-  margin: 60px 0 0 0;
+  margin-top: 68px;
   padding: 0;
   color: #000;
 }
@@ -175,13 +182,17 @@
 .table__heading {
   padding: 0;
   margin: 0;
-
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .table__text {
   margin: 20px 0 0 0;
   padding: 0;
-
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 
@@ -190,6 +201,7 @@
   position: relative;
   min-height: 790px;
   padding-top: 1px;
+  margin-top: 100px;
   z-index: -5;
   background-image: url("../images/feynman.png");
   background-position: left bottom;
@@ -245,7 +257,7 @@
 
 
 .kaufman {
-  background-color: black;
+  background-color: #000;
   padding-top: 1px;
   z-index: 2;
   overflow: hidden;
@@ -256,58 +268,35 @@
   background-size: 877px 877px;
 }
 
+
 .section-title_theme_dark {
-  width: 60%;
-  margin: auto;
-  line-height: 69px;
-  font-size: 60px;
-  font-weight: bold;
   margin-top: 90px;
   text-align: center;
   color: #fff;
+
 }
 
 
 .section-subtitle_theme_dark  {
-  margin: auto;
   text-align: center;
-  width: 60%;
-  margin-top: 20px;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
   color: #fff;
+
 }
+
+
 
 .table_theme_dark {
-  display: flex;
   margin: 0 auto 90px auto;
-  width: 950px;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  justify-content: space-between;
   color: #fff;
+
 }
 
 
-
-.table_cell_theme_dark {
-  width: 160px;
-  margin: 80px 0 0 0;
-  padding: 0;
+.table__cell_theme_dark {
+  width: 205px;
+  margin: 85px 0 0 0;
   color: #fff;
-}
 
-
-.table_heading_theme_dark {
-  padding: 0;
-  margin: 0;
-}
-
-.table_text_theme_dark {
-  margin: 20px 0 0 0;
-  padding: 0;
 }
 
 
@@ -318,6 +307,7 @@
   padding-top: 1px;
   flex-basis: 711px;
   display: flex;
+
 }
 
 .footer__columns {
@@ -340,7 +330,6 @@
   font-size: 18px;
   font-weight: normal;
   bottom: 18px;
-
 }
 
 
