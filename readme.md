@@ -32,7 +32,7 @@ For lovers of procrastination
 
 ----
 
-# H1 Practicum by Yandex project by Rachelle Cottle
+# Practicum by Yandex project by Rachelle Cottle
 
 ----
 
