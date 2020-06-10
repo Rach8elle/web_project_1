@@ -4,7 +4,14 @@
   font-size: 18px;
   font-weight: normal;
   color: #fff;
+  transition: opacity .3s ease;
 }
 
+
+.column-links:hover {
+
+    opacity:.5;
+
+ }
 
 
