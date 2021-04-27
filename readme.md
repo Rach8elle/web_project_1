@@ -4,7 +4,7 @@
 
 
 A single page site in HTML and CSS, designed from Figma specs (https://code.s3.yandex.net/web-developer/project-1/sprint-2-eng-brief.pdf).
-https://rach8elle.github.io/web_project_1/
+
 
 [Practicum by Yandex](https://www.practicum.yandex.com "Practicum by Yandex")
 
